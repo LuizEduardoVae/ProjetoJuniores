@@ -2,7 +2,17 @@ body {
     background-color: #C10046;
 }
 h1 {
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: white;
+    text-align: center;
+    margin: 0;
+}
+h4 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+.logo {
     text-align: center;
 }
