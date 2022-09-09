@@ -1,6 +1,13 @@
 body {
     background-color: #C10046;
 }
+header {
+    margin: 0 40px;
+}
+.icone {
+    width: 140px;
+    height: 140px;
+}
 h1 {
     font-family: 'Roboto', '700', sans-serif;
     color: white;
@@ -22,28 +29,11 @@ h4 {
     height: 184px;
     margin-bottom: 30px;
  }
-form {
-    text-align: center;
-}
-.enviar {
-    background: white;
-    color: black;
-    border-color: white;
-    height: 30px;
-    width: 150px;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 10px;
-}
-input {
-    width: 300px;
-    height: 20px;
-    margin: 7px;
-    border-radius: 3px;
-    border: 0px;
-}
-footer {
-    margin-top: 90px;
-    text-align: center;
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .logoct {
     width: 160px;
@@ -52,10 +42,4 @@ footer {
 .logojuniores {
     width: 201px;
     height: 88px;
-}
-.footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
