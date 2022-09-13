@@ -42,7 +42,7 @@ h1 {
     text-align: center;
     margin: 0;
 }
-h4 {
+h3 {
     font-family: 'Roboto', '400', sans-serif;
     color: white;
     text-align: center;
@@ -50,6 +50,7 @@ h4 {
     margin-bottom: 40px;
 }
 .footer{
+    margin-top: 63px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -62,4 +63,29 @@ h4 {
 .logojuniores {
     width: 200px;
     height: auto;
+}
+
+.texto{
+    margin-top: 70px;
+    text-align: justify;
+    margin-right: 15%;
+    margin-left: 15%;
+    justify-content: center;
+    
+}
+
+input{
+    
+    border-radius: 3px;
+    border: 0px;
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    border: 0px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+form{
+  text-align: center;  
+  margin-top: 80px;
 }
