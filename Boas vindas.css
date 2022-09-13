@@ -31,7 +31,14 @@ h5 {
 .logoEncej {
     width: 200px;
     height: auto;
+    
 }
+@media screen and (max-width: 687px) {
+    .logoEncej{
+      display: none;
+    }
+  }
+
 .icone {
     width: 140px;
     height: auto;
