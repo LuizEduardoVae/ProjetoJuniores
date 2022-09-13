@@ -4,11 +4,37 @@ body {
 header {
     margin: 0 40px;
 }
-
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.pessoa {
+    display: flex;
+    align-items: center;
+}
+h2, h5 {
+    margin: 1px;
+    margin-left: 30px;
+    font-family: 'Roboto', '700', sans-serif;
+    color: white;
+}
+h5 {
+    text-align: left;
+}
+.logoEncej {
+    width: 200px;
+    height: auto;
+}
 .icone {
-    
     width: 140px;
-    height: 140px;
+    height: auto;
 }
 h1 {
     font-family: 'Roboto', '700', sans-serif;
@@ -23,14 +49,6 @@ h4 {
     margin: 5px;
     margin-bottom: 40px;
 }
-.encej {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    height: 184px;
-    margin-bottom: 30px;
- }
 .footer{
     display: flex;
     flex-direction: row;
@@ -39,9 +57,9 @@ h4 {
 }
 .logoct {
     width: 160px;
-    height: 36px;
+    height: auto;
 }
 .logojuniores {
-    width: 201px;
-    height: 88px;
+    width: 200px;
+    height: auto;
 }
