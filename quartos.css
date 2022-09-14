@@ -1,5 +1,18 @@
+.all {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 687px){
+    .all{
+        max-width: 100px;
+    }
+ }
+
 body {
     background-color: #C10046;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 h1 {
@@ -52,6 +65,12 @@ h3 {
     max-height: 250px;
  }
 
+ @media screen and (max-width: 687px){
+    .encej{
+        display: none;
+    }
+ }
+
 .legenda {
     display: flex;
     flex-direction: row;
@@ -81,6 +100,12 @@ hr.solid {
     width: 997px;
   }
 
+  @media screen and (max-width: 687px){
+    hr.solid{
+        width: 650px;
+    }
+ }
+
 .vl {
     border-left: 2px solid #c9c9c9;
     height: 35px;
@@ -90,6 +115,8 @@ hr.solid {
     text-align: center;
     margin-top: 25px;
     font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tab_capacidade {
