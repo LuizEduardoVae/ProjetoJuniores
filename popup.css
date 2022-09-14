@@ -1,0 +1,37 @@
+body {
+    background-color: #C10046;
+    margin: 0px;
+}
+p {
+    margin-left: 25px;
+    font-family: 'Roboto', '700', sans-serif;
+}
+h1{
+    text-align: center;
+    font-family: 'Roboto', '700', sans-serif;
+    color: white;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    border-radius: 3px;
+    width: 350px;
+    height: 200px;
+    background: white;
+}
+.iconGenerico {
+    width: 15px;
+    height: auto;
+}
+.quarto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}

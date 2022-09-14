@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: #C10046;
 }
@@ -88,4 +89,103 @@ input{
 form{
   text-align: center;  
   margin-top: 80px;
+=======
+body {
+    background-color: #C10046;
+}
+header {
+    margin: 0 40px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.pessoa {
+    display: flex;
+    align-items: center;
+}
+h2, h5 {
+    margin: 1px;
+    margin-left: 30px;
+    font-family: 'Roboto', '700', sans-serif;
+    color: white;
+}
+h5 {
+    text-align: left;
+}
+.logoEncej {
+    width: 200px;
+    height: auto;
+    
+}
+@media screen and (max-width: 687px) {
+    .logoEncej{
+      display: none;
+    }
+  }
+
+.icone {
+    width: 140px;
+    height: auto;
+}
+h1 {
+    font-family: 'Roboto', '700', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+h3 {
+    font-family: 'Roboto', '400', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 40px;
+}
+.footer{
+    margin-top: 63px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logoct {
+    width: 160px;
+    height: auto;
+}
+.logojuniores {
+    width: 200px;
+    height: auto;
+}
+
+.texto{
+    margin-top: 70px;
+    text-align: justify;
+    margin-right: 15%;
+    margin-left: 15%;
+    justify-content: center;
+    
+}
+
+input{
+    
+    border-radius: 3px;
+    border: 0px;
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    border: 0px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+form{
+  text-align: center;  
+  margin-top: 80px;
+>>>>>>> e28adcc8b875ce5af77fde265a14a9de4231af50
 }
