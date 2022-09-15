@@ -11,7 +11,22 @@ h1{
     font-family: 'Roboto', '700', sans-serif;
     color: white;
 }
-.container {
+h6, h5 {
+    margin: 1px;
+    margin-left: 15px;
+    font-family: 'Roboto', '700', sans-serif;
+    color: black;
+}
+h6 {
+    text-align: left;
+}
+.icone {
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 50px;
+    height: auto;
+}
+.modal {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -21,7 +36,7 @@ h1{
 }
 .box {
     border-radius: 3px;
-    width: 350px;
+    width: 500px;
     height: 200px;
     background: white;
 }
@@ -29,9 +44,47 @@ h1{
     width: 15px;
     height: auto;
 }
-.quarto {
+.room{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+}
+.people {
+    display: flex;
+    align-items: center;
+}
+.conjunto {
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 800px) {
+    .conjunto {
+        flex-direction: column;
+    }
+    .box {
+        width: 250px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .icone {
+        margin-left: 0;
+    }
+}
+.botao {
+    background: white;
+    color: black;
+    border-color: white;
+    height: 30px;
+    width: 100px;
+    font-family: 'Roboto', sans-serif;
+    margin: 7px;
+    border-radius: 3px;
+    border: 0px;
+}
+.botoes {
+    margin-top: 30px;
 }

@@ -133,7 +133,7 @@ hr.solid {
     .grupo_quartos {
       flex-direction: column;
     }
-  }
+}
 
 .quarto {
     display: flex;
