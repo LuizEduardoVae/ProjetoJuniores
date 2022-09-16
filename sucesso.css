@@ -123,7 +123,7 @@ h3 {
     .inf_quarto{
         flex-direction: column;
         justify-content: space-evenly;
-        width: 65vw;
+        width: 250px;
         height: 120px;
         justify-content: center;
     }

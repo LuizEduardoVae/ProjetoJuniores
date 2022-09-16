@@ -1,18 +1,5 @@
-.all {
-    max-width: 1500px;
-    margin: 0 auto;
-}
-
-@media screen and (max-width: 687px){
-    .all{
-        max-width: 100px;
-    }
- }
-
 body {
     background-color: #C10046;
-    max-width: 100%;
-    margin: 0 auto;
 }
 
 h1 {
@@ -30,46 +17,73 @@ p {
     font-size: 28px;
 }
 
+@media screen and (max-width: 687px) {
+    p{
+      font-size: 20px;
+    }
+  }
+
 h3 {
     font-family: 'Roboto', '700', sans-serif;
     color: black;
     font-size: 25.55px;
 }
 
-.avatar {
-    height: 175px;
-    width: 175px;
-    margin-left: 75px;
-    margin-top: 30px;
-    float: left;
+@media screen and (max-width: 687px) {
+    h3{
+      font-size: 16px;
+    }
+  }
+
+header {
+    margin: 0 40px;
 }
 
-.cabecalho {
+.container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.nome_EJ {
-    margin-left: 70px;
-    margin-top: 100px;
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.encej {
-    display: block;
-    margin-top: 40px;
-    margin-left: 550px;
-    width: auto;
-    height: auto;
-    max-width: 250px;
-    max-height: 250px;
- }
+.pessoa {
+    display: flex;
+    align-items: center;
+}
 
- @media screen and (max-width: 687px){
-    .encej{
-        display: none;
+.icone {
+    width: 140px;
+    height: auto;
+}
+
+h2, h5 {
+    margin: 1px;
+    margin-left: 30px;
+    font-family: 'Roboto', '700', sans-serif;
+    color: white;
+}
+
+h5 {
+    text-align: left;
+}
+
+.logoEncej {
+    width: 200px;
+    height: auto;
+    
+}
+
+@media screen and (max-width: 687px) {
+    .logoEncej{
+      display: none;
     }
- }
+  }
 
 .legenda {
     display: flex;
@@ -78,13 +92,20 @@ h3 {
     align-items: center;
     margin-top: 25px;
     background-color: white;
-    width: 587.53px;
+    width: 40vw;
     height:50.73px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 9.77px;   
     position: center; 
 }
+
+@media screen and (max-width: 687px) {
+    .legenda{
+        width: 70vw;
+        height: 40px;
+    }
+  }
 
 .icones_legenda {
     width: auto;
@@ -95,16 +116,21 @@ h3 {
     margin-right: 40px;
 }
 
-hr.solid {
-    border-top: 1px solid #c2c2c2;
-    width: 997px;
+@media screen and (max-width: 687px) {
+    .icones_legenda{
+        margin-left: 15px;
+        margin-right: 15px;
+        width: auto;
+        height: auto;
+        max-width:26px;
+        max-height:26px;
+    }
   }
 
-  @media screen and (max-width: 687px){
-    hr.solid{
-        width: 650px;
-    }
- }
+hr.solid {
+    border-top: 1px solid #c2c2c2;
+    width: 80vw;
+  }
 
 .vl {
     border-left: 2px solid #c9c9c9;
@@ -115,8 +141,6 @@ hr.solid {
     text-align: center;
     margin-top: 25px;
     font-size: 32px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .tab_capacidade {
@@ -150,13 +174,29 @@ hr.solid {
     width: 160px;
 }
 
+@media screen and (max-width: 687px) {
+    .botao_on{
+      font-size: 20px;
+      height: auto;
+      width: auto;
+      padding: 8px;
+    }
+
+    .botao_off{
+      font-size: 20px;
+      height: auto;
+      width: auto;
+      padding: 8px;
+    }
+  }
+
 .grupo_quartos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 687px) {
     .grupo_quartos {
       flex-direction: column;
     }
@@ -174,6 +214,14 @@ hr.solid {
     margin-top: 40px;
 }
 
+@media screen and (max-width: 687px) {
+    .quarto{
+      width: 92vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
 .num_quarto {
     color: black;
     font-size: 19.85px;
@@ -181,6 +229,13 @@ hr.solid {
     margin-left: 40px;
     margin-bottom: 5px;
 }
+
+@media screen and (max-width: 687px) {
+    .num_quarto{
+      font-size: 15px;
+      margin-left: 15px;
+    }
+  }
 
 .tag_quarto_disponivel {
     color: white;
@@ -204,6 +259,24 @@ hr.solid {
     margin-left: 40px;
 }
 
+@media screen and (max-width: 687px) {
+    .tag_quarto_disponivel{
+        font-size: 10px;
+        height: auto;
+        width: auto;
+        padding: 4px;
+        margin-left: 15px;
+    }
+
+    .tag_quarto_lotado{
+        font-size: 10px;
+        height: auto;
+        width: auto;
+        padding: 4px;
+        margin-left: 15px;
+    }
+  }
+
 .icones_quarto {
     width: auto;
     height: auto;
@@ -212,6 +285,23 @@ hr.solid {
     margin-left: 5px;
     margin-right: 5px;
 }
+
+@media screen and (max-width: 687px) {
+    .icones_quarto{
+        width: auto;
+        height: auto;
+        max-width:30px;
+        max-height:30px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+  }
+
+  @media screen and (max-width: 687px) {
+    .id_quarto{
+        margin-right: 3px;
+    }
+  }
 
 .botao_detalhes {
     border: 0px;
@@ -224,10 +314,19 @@ hr.solid {
     margin-right: 40px;
 }
 
+@media screen and (max-width: 687px) {
+    .botao_detalhes{
+      width: 96px;
+      margin-right: 15px;
+    }
+  }
+
 footer {
-    margin-top: 90px;
+    margin-top: auto;
     text-align: center;
 }
+
+
 
 .logoct {
     width: 160px;
