@@ -47,7 +47,7 @@
                         <img src="disponivel.png" alt="disponivel" class="icones_quarto">
                         <img src="disponivel.png" alt="disponivel" class="icones_quarto">
                     </div>
-                    <div> <button class="botao_detalhes">Ver detalhes</button> </div>
+                    <div> <button class="botao_detalhes" id="myBtn">Ver detalhes</button> </div>
                 </div>
                 <div class="quarto"> 
                     <div>
@@ -60,7 +60,7 @@
                         <img src="ocupado.png" alt="ocupado" class="icones_quarto">
                         <img src="ocupado.png" alt="ocupado" class="icones_quarto">
                     </div>
-                    <div> <button class="botao_detalhes">Ver detalhes</button> </div>
+                    <div> <button class="botao_detalhes" id="botao2">Ver detalhes</button> </div>
                 </div>
                 </div>
 
@@ -76,7 +76,7 @@
                         <img src="ocupado.png" alt="ocupado" class="icones_quarto">
                         <img src="ocupado.png" alt="ocupado" class="icones_quarto">
                     </div>
-                    <div> <button class="botao_detalhes">Ver detalhes</button> </div>
+                    <div> <button class="botao_detalhes" id="botao3">Ver detalhes</button> </div>
                 </div>
                 <div class="quarto"> 
                     <div>
@@ -89,7 +89,7 @@
                         <img src="disponivel.png" alt="disponivel" class="icones_quarto">
                         <img src="disponivel.png" alt="disponivel" class="icones_quarto">
                     </div>
-                    <div> <button class="botao_detalhes">Ver detalhes</button> </div>
+                    <div> <button class="botao_detalhes" id="botao4">Ver detalhes</button> </div>
                 </div>
             </div>
 
@@ -105,7 +105,7 @@
                         <img src="ocupado.png" alt="ocupado" class="icones_quarto">
                         <img src="disponivel.png" alt="disponivel" class="icones_quarto">
                     </div>
-                    <div> <button class="botao_detalhes">Ver detalhes</button> </div>
+                    <div> <button class="botao_detalhes" id="botao5">Ver detalhes</button> </div>
                 </div>
                 <div class="quarto"> 
                     <div>
@@ -118,10 +118,67 @@
                         <img src="ocupado.png" alt="ocupado" class="icones_quarto">
                         <img src="ocupado.png" alt="ocupado" class="icones_quarto">
                     </div>
-                    <div> <button class="botao_detalhes">Ver detalhes</button> </div>
+                    <div> <button class="botao_detalhes" id="botao6">Ver detalhes</button> </div>
                 </div>
             </div>
-        </body>
+
+
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                    <div>
+                        <h1 class="tituloPopup">Revise as informações do quarto antes de continuar</h1>
+                    </div>
+                    <div class="box">
+                        <div class="room">
+                            <p class="QuartoDiff">Quarto 5</p>
+                            <figure>
+                                <img src="icon rosa.svg" class="iconGenerico">
+                                <img src="icon rosa.svg" class="iconGenerico">
+                                <img src="icon rosa.svg" class="iconGenerico">
+                                <img src="icon cinza.svg" class="iconGenerico">
+                            </figure>
+                            <span class="close">&times;</span>
+                        </div>
+            
+                        <div class="conjunto">
+                            <div class="people">
+                                <img src="icon.png" class="iconePeq">
+                                <div class="informacoes">
+                                <h5 class="nomePeq">Carlos R. Guimarães</h5><h6 class="EJ">CT Junior</h6>
+                                </div>
+                            </div>
+                            <div class="people">
+                                <img src="icon.png" class="iconePeq">
+                                <div class="informacoes">
+                                <h5 class="nomePeq">Carlos R. Guimarães</h5><h6 class="EJ">CT Junior</h6>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="conjunto">
+                            <div class="people">
+                                <img src="icon.png" class="iconePeq">
+                                <div class="informacoes">
+                                <h5 class="nomePeq">Carlos R. Guimarães</h5><h6 class="EJ">CT Junior</h6>
+                                </div>
+                            </div>
+                            <div class="people">
+                                <img src="iconegenerico.svg" class="iconePeq">
+                                <div class="informacoes">
+                                <h5 class="nomePeq">Disponível</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botoes">
+                        <form>
+                            <button class="botao">Confirmar</button>
+                            <button class="botao">Voltar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </body>
         <footer>
             <figure>
                 <div class="footer">
@@ -130,5 +187,53 @@
                 </div>
             </figure>
         </footer>
-    </div>
+
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            var botao2 = document.getElementById("botao2");
+            var botao3 = document.getElementById("botao3");
+            var botao4 = document.getElementById("botao4");
+            var botao5 = document.getElementById("botao5");
+            var botao6 = document.getElementById("botao6");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            botao2.onclick = function() {
+              modal.style.display = "block";
+            }
+            botao3.onclick = function() {
+              modal.style.display = "block";
+            }
+            botao4.onclick = function() {
+              modal.style.display = "block";
+            }
+            botao5.onclick = function() {
+              modal.style.display = "block";
+            }
+            botao6.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+        </script>
 </html>

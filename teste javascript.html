@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+p {
+    margin-left: 25px;
+    font-family: 'Roboto', '700', sans-serif;
+}
+h1{
+    text-align: center;
+    font-family: 'Roboto', '700', sans-serif;
+    color: white;
+}
+h6, h5 {
+    margin: 1px;
+    margin-left: 15px;
+    font-family: 'Roboto', '700', sans-serif;
+    color: black;
+}
+h6 {
+    text-align: left;
+}
+.icone {
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 50px;
+    height: auto;
+}
+.modal-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    border-radius: 3px;
+    width: 500px;
+    height: 200px;
+    background: white;
+}
+.iconGenerico {
+    width: 15px;
+    height: auto;
+}
+.room{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.people {
+    display: flex;
+    align-items: center;
+}
+.conjunto {
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 800px) {
+    .conjunto {
+        flex-direction: column;
+    }
+    .box {
+        width: 250px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .icone {
+        margin-left: 0;
+    }
+}
+.botao {
+    background: white;
+    color: black;
+    border-color: white;
+    height: 30px;
+    width: 100px;
+    font-family: 'Roboto', sans-serif;
+    margin: 7px;
+    border-radius: 3px;
+    border: 0px;
+}
+.botoes {
+    margin-top: 30px;
+}
+</style>
+</head>
+<body>
+<h2>Modal Example</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+
+  <!-- Modal content -->
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+        <div>
+            <h1>Revise as informações do quarto antes de continuar</h1>
+        </div>
+        <div class="box">
+            <div class="room">
+                <p>Quarto 5</p>
+                <figure>
+                    <img src="icon rosa.svg" class="iconGenerico">
+                    <img src="icon rosa.svg" class="iconGenerico">
+                    <img src="icon rosa.svg" class="iconGenerico">
+                    <img src="icon cinza.svg" class="iconGenerico">
+                </figure>
+            </div>
+
+            <div class="conjunto">
+                <div class="people">
+                    <img src="icon.png" class="icone">
+                    <div class="informacoes">
+                    <h5>Carlos R. Guimarães</h5><h6>CT Junior</h6>
+                    </div>
+                </div>
+                <div class="people">
+                    <img src="icon.png" class="icone">
+                    <div class="informacoes">
+                    <h5>Carlos R. Guimarães</h5><h6>CT Junior</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conjunto">
+                <div class="people">
+                    <img src="icon.png" class="icone">
+                    <div class="informacoes">
+                    <h5>Carlos R. Guimarães</h5><h6>CT Junior</h6>
+                    </div>
+                </div>
+                <div class="people">
+                    <img src="iconegenerico.svg" class="icone">
+                    <div class="informacoes">
+                    <h5>Disponível</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="botoes">
+            <form>
+                <button class="botao">Confirmar</button>
+                <button class="botao">Voltar</button>
+            </form>
+        </div>
+    </div>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+</div>
+</body>
+</html>

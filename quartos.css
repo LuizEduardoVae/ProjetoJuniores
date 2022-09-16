@@ -344,3 +344,129 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  backdrop-filter: blur(5px);
+}
+/* The Close Button */
+.close {
+  margin-right: 20px;
+  margin-top: 10px;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.QuartoDiff {
+    color: black;
+    margin: auto;
+    margin-left: 25px;
+    font-family: 'Roboto', '700', sans-serif;
+    text-align: auto;
+    font-size: 20px;
+}
+.tituloPopup{
+    text-align: center;
+    font-family: 'Roboto', '700', sans-serif;
+    color: white;
+    text-align: auto;
+    margin-bottom: 20px;
+}
+.EJ, .nomePeq {
+    margin: 1px;
+    margin-left: 15px;
+    font-family: 'Roboto', '700', sans-serif;
+    color: black;
+}
+.EJ {
+    text-align: left;
+}
+.iconePeq {
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 50px;
+    height: auto;
+}
+.modal-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    border-radius: 3px;
+    width: 500px;
+    height: 200px;
+    background: white;
+}
+.iconGenerico {
+    width: 15px;
+    height: auto;
+}
+.room{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.people {
+    display: flex;
+    align-items: center;
+}
+.conjunto {
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 800px) {
+    .conjunto {
+        flex-direction: column;
+    }
+    .box {
+        width: 250px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .icone {
+        margin-left: 0;
+    }
+}
+.botao {
+    background: white;
+    color: black;
+    border-color: white;
+    height: 30px;
+    width: 100px;
+    font-family: 'Roboto', sans-serif;
+    margin: 7px;
+    border-radius: 3px;
+    border: 0px;
+}
+.botoes {
+    margin-top: 30px;
+}
